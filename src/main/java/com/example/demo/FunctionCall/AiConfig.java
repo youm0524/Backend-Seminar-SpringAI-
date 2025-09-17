@@ -8,38 +8,9 @@ import org.springframework.ai.tool.execution.ToolExecutionExceptionProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-//@Configuration
-//public class AiConfig {
-//
-//    @Bean
-//    public ChatClient chatClient(Object groqChatModel,
-//                                 CustomerTool customerTools) {
-//        return ChatClient.builder((ChatModel) groqChatModel)
-//                .defaultSystem("""
-//                        You are a read-only assistant.
-//                        Use customer data tools only.
-//                       """)
-//                .defaultTools(customerTools)
-//                .build();
-//    }
-//}
 
 @Configuration
 public class AiConfig {
-
-//    @Bean
-//    public ChatClient chatClient(
-//            ChatModel openAIChatModel,
-//            CustomerTool customerTools) {
-//
-//        return ChatClient.builder(openAIChatModel)
-//                .defaultSystem("""
-//                        You are a read-only assistant.
-//                        Use customer data tools only.
-//                       """)
-//                .defaultTools(customerTools)
-//                .build();
-//    }
 
     @Bean
     public ChatClient chatClient(ChatModel openAIChatModel,
